@@ -7,7 +7,7 @@ having some fun with slack. This will eventually be a moonbot that alerts me and
 ##USER STORIES
 1. I can ask/receive a text answer on current moon phase.
 2. I can ask/receive an image of the current moon phase. 
-* these first two will likely be done with slash notifications.*
+
 3. I can receive ephemeral notification of a full moon.
 4. I can receive ephemeral notification of a new moon.
 5. I can receive ephemeral notification of a super moon.
