@@ -15,17 +15,13 @@ var app = express();
 // what port is ngrok listening on
 const PORT = 4390;
 
-//handle the request and send a response
-function moonbotRequest(request,response){
-  response.end('Ngrok-king it! You are hitting this path:' + request.url);
-}
-
-//create the web server, use the moonbot request response each time.
-var server = http.createServer(moonbotRequest);
-
 //start the server, issue callback if successful
-server.listen(PORT, function(){
+app.listen(PORT, function(){
   console.log("We hear you! Server listening on http://localhost: %s ", PORT);
 });
 
+//GET call to ngrok, response if working
+app.get('/', function(req,res){
+  res.send('Ngrok-king it! You are hitting this path:' + req.url);
+});
 
