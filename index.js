@@ -1,6 +1,12 @@
+//dotenv for id and key security
+require('dotenv').config();
+
 //Import express & request
 var express = require('express');
 var request = require('request');
+
+// slackBot app id and key
+
 
 //imports the http module
 var http = require('http');
