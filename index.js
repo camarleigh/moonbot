@@ -1,3 +1,7 @@
+//Import express & request
+var express = require('express');
+var request = require('request');
+
 //imports the http module
 var http = require('http');
 
