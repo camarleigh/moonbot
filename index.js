@@ -1,15 +1,16 @@
 //dotenv for id and key security
 require('dotenv').config();
 
-//Import express & request
+//Import express,request, http
 var express = require('express');
 var request = require('request');
 
-// slackBot app id and key
+//Slack ID and Secret
+var slackId = 'MOONBOT_SLACK_ID';
+var slackSecret = 'MOONBOT_SLACK_SECRET';
 
-
-//imports the http module
-var http = require('http');
+//instantiate app and assign it to express
+var app = express();
 
 // what port is ngrok listening on
 const PORT = 4390;
